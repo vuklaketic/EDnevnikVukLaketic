@@ -158,12 +158,17 @@ namespace EDnevnikVukLaketic
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
+            Boolean posl = true;
             string Naredba1 = "DELETE FROM Raspodela WHERE nastavnik_id = " + txt_id.Text;
             string Naredba2 = "DELETE FROM Ocena WHERE ucenik_id = " + txt_id.Text;
             string Naredba3 = "DELETE FROM Upisnica WHERE osoba_id = " + txt_id.Text;
             string Naredba4 = "DELETE FROM Odeljenje WHERE razredni_id = " + txt_id.Text;
             string Naredba = "DELETE FROM Osoba WHERE Osoba.id = " + txt_id.Text;
-            if (broj_sloga == tabela.Rows.Count - 1) broj_sloga--;
+            if (broj_sloga == tabela.Rows.Count - 1) 
+            {
+                broj_sloga--;
+                posl = false;
+            }
             if (broj_sloga < 0) broj_sloga = 0;
             SqlConnection veza = Konekcija.Connect();
             SqlCommand komanda1 = new SqlCommand(Naredba1, veza);
@@ -188,10 +193,15 @@ namespace EDnevnikVukLaketic
                 MessageBox.Show(GRESKA.Message);
             }
 
-            if (brisano)
+            if (brisano && posl) 
             {
                 Load_Data();
                 if (broj_sloga > 0) broj_sloga--;
+                TxtPopulate();
+            }
+            else 
+            {
+                Load_Data();
                 TxtPopulate();
             }
             inf.Text = "Podatak uspesno obrisan!";
