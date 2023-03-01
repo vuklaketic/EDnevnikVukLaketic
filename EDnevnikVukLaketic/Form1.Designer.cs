@@ -35,12 +35,13 @@ namespace EDnevnikVukLaketic
             this.jedanSaFKToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.raspodelaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabelaBezToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabelaSaFKToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.izvestajiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.smeroviToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.skolskeGodineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.predmetiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.osobeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabelaSaFKToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.izvestajiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ocenaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,14 +72,15 @@ namespace EDnevnikVukLaketic
             // osobeToolStripMenuItem
             // 
             this.osobeToolStripMenuItem.Name = "osobeToolStripMenuItem";
-            this.osobeToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.osobeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.osobeToolStripMenuItem.Text = "Osobe";
             this.osobeToolStripMenuItem.Click += new System.EventHandler(this.osobeToolStripMenuItem_Click_1);
             // 
             // jedanSaFKToolStripMenuItem
             // 
             this.jedanSaFKToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.raspodelaToolStripMenuItem});
+            this.raspodelaToolStripMenuItem,
+            this.ocenaToolStripMenuItem});
             this.jedanSaFKToolStripMenuItem.Name = "jedanSaFKToolStripMenuItem";
             this.jedanSaFKToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.jedanSaFKToolStripMenuItem.Text = "Jedan SaFK";
@@ -100,18 +102,6 @@ namespace EDnevnikVukLaketic
             this.tabelaBezToolStripMenuItem.Name = "tabelaBezToolStripMenuItem";
             this.tabelaBezToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.tabelaBezToolStripMenuItem.Text = "Tabela Bez";
-            // 
-            // tabelaSaFKToolStripMenuItem
-            // 
-            this.tabelaSaFKToolStripMenuItem.Name = "tabelaSaFKToolStripMenuItem";
-            this.tabelaSaFKToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
-            this.tabelaSaFKToolStripMenuItem.Text = "Tabela SaFK";
-            // 
-            // izvestajiToolStripMenuItem
-            // 
-            this.izvestajiToolStripMenuItem.Name = "izvestajiToolStripMenuItem";
-            this.izvestajiToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.izvestajiToolStripMenuItem.Text = "Izvestaji";
             // 
             // smeroviToolStripMenuItem
             // 
@@ -140,6 +130,25 @@ namespace EDnevnikVukLaketic
             this.osobeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.osobeToolStripMenuItem1.Text = "Osobe";
             this.osobeToolStripMenuItem1.Click += new System.EventHandler(this.osobeToolStripMenuItem1_Click);
+            // 
+            // tabelaSaFKToolStripMenuItem
+            // 
+            this.tabelaSaFKToolStripMenuItem.Name = "tabelaSaFKToolStripMenuItem";
+            this.tabelaSaFKToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+            this.tabelaSaFKToolStripMenuItem.Text = "Tabela SaFK";
+            // 
+            // izvestajiToolStripMenuItem
+            // 
+            this.izvestajiToolStripMenuItem.Name = "izvestajiToolStripMenuItem";
+            this.izvestajiToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.izvestajiToolStripMenuItem.Text = "Izvestaji";
+            // 
+            // ocenaToolStripMenuItem
+            // 
+            this.ocenaToolStripMenuItem.Name = "ocenaToolStripMenuItem";
+            this.ocenaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ocenaToolStripMenuItem.Text = "Ocena";
+            this.ocenaToolStripMenuItem.Click += new System.EventHandler(this.ocenaToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -171,5 +180,6 @@ namespace EDnevnikVukLaketic
         private System.Windows.Forms.ToolStripMenuItem skolskeGodineToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem predmetiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem osobeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ocenaToolStripMenuItem;
     }
 }

@@ -62,5 +62,11 @@ namespace EDnevnikVukLaketic
             Sifarnik frm_sifarnik = new Sifarnik("osoba");
             frm_sifarnik.Show();
         }
+
+        private void ocenaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ocena frm_Ocena = new Ocena();
+            frm_Ocena.Show();
+        }
     }
 }
